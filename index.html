@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💜Valentines Gift Shop💜</title>
+  <style>
+    body {
+      background: #b41c3d;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+    }
+
+    h1 {
+      color: #50112b;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    p {
+      color: #50112b;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .riddle {
+      max-width: 500px;
+      margin: 40px auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    form {
+      display: inline-block;
+      border: 1px solid #790909;
+      padding: 20px 40px;
+      border-radius: 10px;
+      background-color: #e17282;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+    }
+
+    label,
+    select,
+    input {
+      display: block;
+      margin: 10px 0;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #790909;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a00c0c;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -60px;
+      font-size: 28px;
+      animation-name: floatUp;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      50% {
+        transform: translate(20px, -60vh);
+      }
+      100% {
+        transform: translate(-20px, -120vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💜Valentines Gift Shop💜</h1>
+
+  <p class="riddle">
+    <strong>Riddle:</strong><br>
+    I hurt when ignored,<br>
+    but loved when restored.<br>
+    I exist in countless forms <br>
+    and once I return, my purpose unfolds. <br><br>
+
+    <em>Some secrets are only found when you peek behind the curtain 👀</em><br><br>
+
+    What am I?<br>
+    Make a selection below and unlock the challenge ✨
+  </p>
+
+  <form action="/result" method="POST">
+    <label>Item:</label>
+    <select name="item">
+      <option value="choco">Chocolate</option>
+      <option value="rose">Rose</option>
+      <option value="teddy">Teddy</option>
+      <option value="letter">Letter</option>
+      <option value="card">Card</option>
+      <option value="lollipop">Lollipop</option>
+      <option value="jewlery">Jewlery</option>
+      <option value="candle">Candle</option>
+      <option value="lego">Lego</option>
+      <option value="bags">Bags</option>
+      <option value="mugs">Mugs</option>
+      <option value="makeup">Makeup</option>
+      <option value="books">Book</option>
+      <option value="plushie">Plushie</option>
+    </select>
+
+    <label>Quantity:</label>
+    <!-- qty: Mw==-->
+    <input type="number" name="quantity" value="1" min="1">
+
+    <button type="submit">Buy</button>
+  </form>
+
+  <div class="heart" style="left:8%; animation-duration: 9s; animation-delay:0s; font-size: 50px;">💖</div>
+  <div class="heart" style="left:22%; animation-duration: 7s; animation-delay:2s; font-size: 56px;">💕</div>
+  <div class="heart" style="left:37%; animation-duration: 10s; animation-delay:1s; font-size: 48px;">❤️</div>
+  <div class="heart" style="left:37%; animation-duration: 8s; animation-delay:3s; font-size: 54px;">💗</div>
+  <div class="heart" style="left:51%; animation-duration: 11s; animation-delay:0.5s; font-size: 46px;">💘</div>
+  <div class="heart" style="left:66%; animation-duration: 9s; animation-delay:2.5s; font-size: 58px;">💓</div>
+  <div class="heart" style="left:14%; animation-duration: 12s; animation-delay:4s; font-size: 52px;">💜</div>
+  <div class="heart" style="left:29%; animation-duration: 8s; animation-delay:1.5s; font-size: 50px;">💝</div>
+  <div class="heart" style="left:44%; animation-duration: 10s; animation-delay:3.5s; font-size: 56px;">💞</div>
+  <div class="heart" style="left:59%; animation-duration: 7s; animation-delay:2s; font-size: 48px;">💙</div>
+  <div class="heart" style="left:73%; animation-duration: 11s; animation-delay:0s; font-size: 54px;">💕</div>
+  <div class="heart" style="left:91%; animation-duration: 9s; animation-delay:4.5s; font-size: 46px;">💛</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purchase Result</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background: #b41c3d;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #50112b;
+    }
+
+    p {
+      font-size: 18px;
+      color: #2e0a19;
+    }
+
+    .hint {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #790909;
+      background-color: #e17282;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    code {
+      background-color: #f3cfd4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💜 Purchase Complete 💜</h1>
+
+  <p>
+    You bought <strong>{{ item }}</strong> for <strong>{{ quantity }}</strong>.
+  </p>
+
+  <p>Your order has been processed successfully.</p>
+
+  <!-- hint: key-value-->
+  <div class="hint">
+    <p><strong>🔍 Something feels… hidden.</strong></p>
+    <ul>
+      <li>The correct gift is a hands-on activity</li>
+      <li>The quantity is a gift cubed</li>
+    </ul>
+    <p>Love isn't what it always seems in the URL...💘</p>
+    <p>When you think you’ve got it right, check the path: <code>/flag?</code></p>
+  </div>
+</body>
+</html>
